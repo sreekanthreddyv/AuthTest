@@ -1,9 +1,9 @@
 #!python
 # log/urls.py
 from django.conf.urls import url
-from . import views
+from .views import home
 
 # We are adding a URL called /home
 urlpatterns = [
-    url(r'^$', views.home, name='home'),
+    url(r'^$', home, name='home'),
 ]
